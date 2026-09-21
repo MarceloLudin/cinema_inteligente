@@ -1,0 +1,16 @@
+{
+  "name": "cinema-inteligente",
+  "version": "5.0.0",
+  "description": "IA que recomenda filmes e séries baseado no seu humor",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5"
+  }
+}

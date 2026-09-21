@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cinema Inteligente - IA que recomenda filmes e séries baseado no seu humor">
+    <title>Cinema Inteligente | Filmes e Séries para Você</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🎬</span>
+                <span class="logo-text">Cinema Inteligente</span>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-section="home">
+                    <span class="nav-icon">🏠</span>
+                    <span>Início</span>
+                </button>
+                <button class="nav-btn" data-section="history">
+                    <span class="nav-icon">📜</span>
+                    <span>Histórico</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home-section" class="section active">
+            <!-- Hero -->
+            <div class="hero">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Curadoria com IA · Sem rolagem infinita</span>
+                </div>
+                <h1 class="hero-title">O filme ou série certa para como você se sente agora</h1>
+                <p class="hero-subtitle">
+                    Diga o seu humor ou escolha um gênero. Nossa IA seleciona 6 títulos do nosso catálogo curado — com motivo e match score. Chega de passar a noite escolhendo.
+                </p>
+            </div>
+
+            <!-- Content Type Selector -->
+            <div class="content-type-selector">
+                <button class="type-btn active" data-type="both">
+                    <span>🎬</span> Filmes e Séries
+                </button>
+                <button class="type-btn" data-type="movie">
+                    <span>🎥</span> Só Filmes
+                </button>
+                <button class="type-btn" data-type="series">
+                    <span>📺</span> Só Séries
+                </button>
+            </div>
+
+            <!-- Selection Card -->
+            <div class="selection-card">
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="mood">
+                        <span>😊</span> Por Humor
+                    </button>
+                    <button class="tab-btn" data-tab="genre">
+                        <span>🎬</span> Por Gênero
+                    </button>
+                </div>
+
+                <!-- Mood Tab Content -->
+                <div id="mood-tab" class="tab-content active">
+                    <div class="step-indicator">Passo 1 · Selecione seu humor</div>
+                    <h2 class="selection-title">Como você está se sentindo?</h2>
+                    
+                    <div class="options-grid">
+                        <button class="option-btn" data-mood="happy">
+                            <span class="option-emoji">😊</span>
+                            <span>Feliz</span>
+                        </button>
+                        <button class="option-btn" data-mood="sad">
+                            <span class="option-emoji">😢</span>
+                            <span>Triste</span>
+                        </button>
+                        <button class="option-btn" data-mood="angry">
+                            <span class="option-emoji">😠</span>
+                            <span>Com Raiva</span>
+                        </button>
+                        <button class="option-btn" data-mood="anxious">
+                            <span class="option-emoji">😰</span>
+                            <span>Ansioso</span>
+                        </button>
+                        <button class="option-btn" data-mood="romantic">
+                            <span class="option-emoji">🥰</span>
+                            <span>Romântico</span>
+                        </button>
+                        <button class="option-btn" data-mood="bored">
+                            <span class="option-emoji">😑</span>
+                            <span>Entediado</span>
+                        </button>
+                        <button class="option-btn" data-mood="inspired">
+                            <span class="option-emoji">💡</span>
+                            <span>Inspirado</span>
+                        </button>
+                        <button class="option-btn" data-mood="thoughtful">
+                            <span class="option-emoji">🤔</span>
+                            <span>Pensativo</span>
+                        </button>
+                    </div>
+
+                    <div class="divider">
+                        <span>Ou descreva</span>
+                    </div>
+
+                    <div class="text-input-wrapper">
+                        <label for="mood-description">Descreva seu humor com suas próprias palavras</label>
+                        <input 
+                            type="text" 
+                            id="mood-description" 
+                            placeholder="Ex: Estou exausto da semana, quero algo leve mas inteligente, com final feliz..."
+                        >
+                    </div>
+                </div>
+
+                <!-- Genre Tab Content -->
+                <div id="genre-tab" class="tab-content">
+                    <div class="step-indicator">Passo 1 · Selecione um gênero</div>
+                    <h2 class="selection-title">O que você quer assistir?</h2>
+                    
+                    <div class="options-grid">
+                        <button class="option-btn" data-genre="comedy">
+                            <span class="option-emoji">😂</span>
+                            <span>Comédia</span>
+                        </button>
+                        <button class="option-btn" data-genre="action">
+                            <span class="option-emoji">⚡</span>
+                            <span>Ação</span>
+                        </button>
+                        <button class="option-btn" data-genre="horror">
+                            <span class="option-emoji">👻</span>
+                            <span>Terror</span>
+                        </button>
+                        <button class="option-btn" data-genre="romance">
+                            <span class="option-emoji">💕</span>
+                            <span>Romance</span>
+                        </button>
+                        <button class="option-btn" data-genre="scifi">
+                            <span class="option-emoji">🚀</span>
+                            <span>Ficção Científica</span>
+                        </button>
+                        <button class="option-btn" data-genre="drama">
+                            <span class="option-emoji">🎭</span>
+                            <span>Drama</span>
+                        </button>
+                        <button class="option-btn" data-genre="animation">
+                            <span class="option-emoji">🎨</span>
+                            <span>Animação</span>
+                        </button>
+                        <button class="option-btn" data-genre="thriller">
+                            <span class="option-emoji">🔪</span>
+                            <span>Suspense</span>
+                        </button>
+                        <button class="option-btn" data-genre="documentary">
+                            <span class="option-emoji">📹</span>
+                            <span>Documentário</span>
+                        </button>
+                        <button class="option-btn" data-genre="fantasy">
+                            <span class="option-emoji">🧙</span>
+                            <span>Fantasia</span>
+                        </button>
+                    </div>
+
+                    <div class="divider">
+                        <span>Ou descreva</span>
+                    </div>
+
+                    <div class="text-input-wrapper">
+                        <label for="genre-description">Descreva o tipo de filme ou série que procura</label>
+                        <input 
+                            type="text" 
+                            id="genre-description" 
+                            placeholder="Ex: Um neo-noir dos anos 90 com trilha sonora marcante e plot twist no final..."
+                        >
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <div class="ai-info">
+                        <span class="ai-icon">🤖</span>
+                        <span>A IA seleciona 6 títulos do nosso catálogo · ~3s</span>
+                    </div>
+                    <div class="buttons-wrapper">
+                        <button class="btn btn-secondary" id="btn-reset">
+                            <span>↻</span> Tentar Novamente
+                        </button>
+                        <button class="btn btn-primary" id="btn-search">
+                            <span>✨</span> Encontrar Títulos
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results-section" class="results-section hidden">
+                <div class="results-header">
+                    <div class="results-title-wrapper">
+                        <span class="results-label">Suas recomendações</span>
+                        <h2 class="results-title">6 títulos para este momento</h2>
+                    </div>
+                    <span class="curated-badge">✨ Curados pela IA, do nosso catálogo</span>
+                </div>
+
+                <div id="results-grid" class="results-grid">
+                    <!-- Results will be injected here -->
+                </div>
+
+                <button class="btn btn-secondary btn-retry" id="btn-retry">
+                    <span>↻</span> Tentar Novamente
+                </button>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loading-section" class="loading-section hidden">
+                <div class="loading-spinner"></div>
+                <h3 class="loading-title">Selecionando seus títulos...</h3>
+                <p class="loading-subtitle">Nossa IA está analisando o catálogo para você</p>
+            </div>
+
+            <!-- How it Works Section -->
+            <section class="how-it-works">
+                <span class="section-label">Como funciona</span>
+                <h2 class="section-title">Cinema Inteligente, em 3 passos</h2>
+                
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Diga como se sente</h3>
+                        <p class="step-description">
+                            Escolha um humor, um gênero, ou descreva em texto livre o que procura esta noite.
+                        </p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">IA cruza o catálogo</h3>
+                        <p class="step-description">
+                            Nosso modelo analisa cada filme e série disponível e encontra os 6 com maior afinidade emocional.
+                        </p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Aperte o play</h3>
+                        <p class="step-description">
+                            Receba match score e o motivo de cada escolha. Decida em segundos, não em horas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- History Section -->
+        <section id="history-section" class="section">
+            <div class="history-header">
+                <h1 class="history-title">📜 Seu Histórico</h1>
+                <p class="history-subtitle">Todos os filmes e séries recomendados para você</p>
+                <button class="btn btn-secondary btn-clear-history" id="btn-clear-history">
+                    <span>🗑️</span> Limpar Histórico
+                </button>
+            </div>
+
+            <div class="history-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="movie">Filmes</button>
+                <button class="filter-btn" data-filter="series">Séries</button>
+            </div>
+
+            <div id="history-list" class="history-list">
+                <!-- History items will be injected here -->
+            </div>
+
+            <div id="empty-history" class="empty-history hidden">
+                <span class="empty-icon">📭</span>
+                <h3>Nenhuma recomendação ainda</h3>
+                <p>Peça uma recomendação e ela aparecerá aqui!</p>
+                <button class="btn btn-primary" id="btn-go-home">
+                    <span>🎬</span> Buscar Recomendações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Cinema Inteligente · Feito com ❤️ e IA</p>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

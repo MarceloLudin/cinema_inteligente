@@ -1,0 +1,8 @@
+# Configuração do Netlify
+# - "publish": só a pasta public/ vira site (server.js, lib/ etc. NÃO ficam públicos)
+# - "functions": onde está o proxy da Groq (fica FORA da pasta publicada)
+[build]
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
