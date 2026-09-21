@@ -14,14 +14,14 @@ O principal objetivo é tornar a escolha de filmes e séries mais rápida, simpl
 
 A aplicação busca:
 
-- 🎭 Recomendar conteúdos de acordo com o humor informado;
-- 🎬 Permitir buscas por gênero e tipo de conteúdo;
-- ⭐ Apresentar uma pontuação de compatibilidade;
-- 📺 Informar em qual plataforma o conteúdo está disponível;
-- 🔗 Disponibilizar acesso direto ao conteúdo;
-- 📝 Apresentar uma breve explicação para cada recomendação;
-- 📚 Manter um histórico das pesquisas realizadas;
-- 🧠 Disponibilizar um quiz relacionado ao conteúdo assistido.
+* 🎭 Recomendar conteúdos de acordo com o humor informado;
+* 🎬 Permitir buscas por gênero e tipo de conteúdo;
+* ⭐ Apresentar uma pontuação de compatibilidade;
+* 📺 Informar em qual plataforma o conteúdo está disponível;
+* 🔗 Disponibilizar acesso direto ao conteúdo;
+* 📝 Apresentar uma breve explicação para cada recomendação;
+* 📚 Manter um histórico das pesquisas realizadas;
+* 🧠 Disponibilizar um quiz relacionado ao conteúdo assistido.
 
 ---
 
@@ -47,13 +47,13 @@ O sistema analisa as informações fornecidas e identifica quais conteúdos poss
 
 São apresentadas recomendações contendo informações como:
 
-- 🖼️ Capa;
-- 🎬 Título;
-- 📂 Tipo de conteúdo;
-- 📝 Motivo da recomendação;
-- 📺 Plataforma disponível;
-- ⭐ Pontuação de compatibilidade;
-- 🔗 Link para acesso.
+* 🖼️ Capa;
+* 🎬 Título;
+* 📂 Tipo de conteúdo;
+* 📝 Motivo da recomendação;
+* 📺 Plataforma disponível;
+* ⭐ Pontuação de compatibilidade;
+* 🔗 Link para acesso.
 
 ### 4. Escolha do conteúdo
 
@@ -77,12 +77,12 @@ Uma das principais funcionalidades do projeto é a possibilidade de buscar conte
 
 É possível informar situações como:
 
-- 😄 Feliz
-- 😢 Triste
-- 😰 Ansioso
-- 😎 Animado
-- 😌 Relaxado
-- ❤️ Romântico
+* 😄 Feliz
+* 😢 Triste
+* 😰 Ansioso
+* 😎 Animado
+* 😌 Relaxado
+* ❤️ Romântico
 
 A partir da informação fornecida, o sistema apresenta conteúdos relacionados àquele momento.
 
@@ -94,13 +94,13 @@ Também é possível realizar pesquisas utilizando gêneros cinematográficos.
 
 Alguns exemplos:
 
-- 😂 Comédia
-- 💥 Ação
-- 👻 Terror
-- ❤️ Romance
-- 🚀 Ficção científica
-- 🎭 Drama
-- 🗺️ Aventura
+* 😂 Comédia
+* 💥 Ação
+* 👻 Terror
+* ❤️ Romance
+* 🚀 Ficção científica
+* 🎭 Drama
+* 🗺️ Aventura
 
 A busca por gênero permite encontrar conteúdos de acordo com uma preferência específica.
 
@@ -112,10 +112,10 @@ O projeto também possui uma funcionalidade de quiz relacionada ao conteúdo ass
 
 Após assistir a um filme ou série, o usuário pode responder perguntas sobre:
 
-- História;
-- Personagens;
-- Acontecimentos;
-- Detalhes do conteúdo.
+* História;
+* Personagens;
+* Acontecimentos;
+* Detalhes do conteúdo.
 
 Ao final, o usuário recebe uma pontuação de acordo com suas respostas.
 
@@ -195,11 +195,11 @@ O usuário consegue:
 ┌──────────────────────┐
 │ Pode realizar o quiz │
 └──────────────────────┘
+```
 
 ## 👥 Colaboradores
 
 Este projeto foi desenvolvido em parceria com:
 
-- **Ana Clara Macedo** - [@AnaClaraMaced](https://github.com/AnaClaraMaced)
-- **Marcelo Henrique De Souza Ludin** - [@MarceloLudin](https://github.com/MarceloLudin/)
-
+**Ana Clara Macedo** - [@AnaClaraMaced](https://github.com/AnaClaraMaced)
+**Marcelo Henrique De Souza Ludin** - [@MarceloLudin](https://github.com/MarceloLudin/)
