@@ -196,3 +196,10 @@ O usuário consegue:
 │ Pode realizar o quiz │
 └──────────────────────┘
 
+## 👥 Colaboradores
+
+Este projeto foi desenvolvido em parceria com:
+
+- **Ana Clara Macedo** - [@AnaClaraMaced](https://github.com/AnaClaraMaced)
+- **Marcelo Henrique De Souza Ludin** - [@MarceloLudin](https://github.com/MarceloLudin/)
+
